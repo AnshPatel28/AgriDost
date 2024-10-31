@@ -1,0 +1,120 @@
+/* Importing Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #ecececdb;
+}
+
+/* Style for sensor heading */
+.sensor-container {
+    max-width: 1250px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.sensor-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 420px;
+    position: relative;
+}
+
+.card-item:hover {
+    border: 2px solid #000;
+}
+
+.card-image {
+    height: 200px; /* Fixed height for all images */
+    width: 100%; /* Full width */
+    background-size: cover;
+    background-position: center;
+    object-fit: cover; /* Ensures images fill the space */
+}
+
+.card-content {
+    padding: 16px;
+    text-align: left;
+}
+
+.sensor-name {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.card-item h3 {
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-35deg);
+    height: 40px;
+    width: 40px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.2s ease;
+}
+
+.card-item:hover .arrow {
+    background: #000;
+    color: #fff; 
+}
+
+/* Specific background images for each card */
+.soil-moisture-image {
+    background-image: url('/Users/pcompany/Desktop/Sem_VII/ET/AgriDost/frontend/public/assets/images/soil-moisture.jpg');
+}
+
+.temperature-humidity-image {
+    background-image: url('/Users/pcompany/Desktop/Sem_VII/ET/AgriDost/frontend/public/assets/images/temperature and humidity.jpg');
+}
+
+.motion-detector-image {
+    background-image: url('/Users/pcompany/Desktop/Sem_VII/ET/AgriDost/frontend/public/assets/images/motion detector.jpg');
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .card-list {
+        grid-template-columns: 1fr;
+    }
+}

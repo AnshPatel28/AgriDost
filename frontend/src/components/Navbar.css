@@ -1,0 +1,62 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  height: 60px; /* Adjust height as needed */
+}
+
+/* Left Section (Logo) */
+.navbar-left {
+  display: flex;
+  align-items: center; /* Ensure it's vertically centered */
+}
+
+.navbar-logo {
+  width: 150px; /* Adjusted smaller logo size */
+  height: auto; /* Changed to auto to maintain aspect ratio */
+  margin-top: -37px; /* Lift the logo slightly upwards */
+}
+
+/* Center Section (Links) */
+.navbar-center {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-center li {
+  display: inline;
+}
+
+.navbar-center a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navbar-center a:hover {
+  color: #000;
+}
+
+/* Right Section (Username) */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-username {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text color */
+  padding: 8px 16px; /* Add padding for spacing */
+  border-radius: 12px; /* Rounded edges */
+  font-size: 14px;
+  font-weight: 600; /* Bold text */
+  text-align: center; /* Center text */
+}
