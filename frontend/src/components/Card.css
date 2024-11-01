@@ -101,15 +101,15 @@ body {
 
 /* Specific background images for each card */
 .soil-moisture-image {
-    background-image: url('/Users/pcompany/Desktop/Sem_VII/ET/AgriDost/frontend/public/assets/images/soil-moisture.jpg');
+    background-image: url('/Users/pcompany/Desktop/Sem_VII/ET/AgriDost/AgriDost/frontend/public/assets/images/soil-moisture.jpg');
 }
 
 .temperature-humidity-image {
-    background-image: url('/Users/pcompany/Desktop/Sem_VII/ET/AgriDost/frontend/public/assets/images/temperature and humidity.jpg');
+    background-image: url('/Users/pcompany/Desktop/Sem_VII/ET/AgriDost/AgriDost/frontend/public/assets/images/temperature and humidity.jpg');
 }
 
 .motion-detector-image {
-    background-image: url('/Users/pcompany/Desktop/Sem_VII/ET/AgriDost/frontend/public/assets/images/motion detector.jpg');
+    background-image: url('/Users/pcompany/Desktop/Sem_VII/ET/AgriDost/AgriDost/frontend/public/assets/images/motion detector.jpg');
 }
 
 /* Responsive design */
